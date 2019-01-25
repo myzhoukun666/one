@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+    </style>
+    <script src=""></script>
+    <script>
+        window.onload = function () {
+            // 提示用户输入班级人数,求总成绩,平均值,最高分,最低分
+            var perCount = parseInt(prompt("请输入班级人数"));
+            var perScore = [];
+            //注意不是perCount.length
+            for (var i = 0; i < perCount; i++) {
+                perScore[perScore.length] = parseInt(prompt("请输入第" + (i + 1) + "个人的成绩"));
+            }
+            var sum = 0;
+            var max = perScore[0];
+            var min = perScore[0];
+            var avg = 0;
+            for (var i = 0; i < perScore.length; i++) {
+                sum = perScore[i] + sum;
+                if(max<perScore[i]){
+                    max = perScore[i]
+                }
+                if(min>perScore[i]){
+                    min = perScore[i]
+                }
+                avg = sum/perScore.length;
+            }
+         console.log("求和为:"+sum);
+         console.log("求最大值:"+max);
+         console.log("求最小值:"+min);
+         console.log("求平均值:"+avg);
+        }
+    </script>
+</head>
+<body>
+
+</body>
+</html>

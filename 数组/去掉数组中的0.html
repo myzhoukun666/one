@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+    </style>
+    <script src=""></script>
+    <script>
+        window.onload = function () {
+            //案例7:去掉数组中重复的0，把其他的数据放在一个新的数组中
+            var arr = [0,2,0,4,12,5,6,9,0];
+            var newArr =[];
+            for(var i=0;i<arr.length;i++){
+                if(arr[i]!=0){
+                    newArr[newArr.length] = arr[i];
+                    //newarr[0] = 2
+                    //newarr[1] = 4
+                    //newarr[2] = 5
+                }
+            }
+            console.log(newArr);
+        }
+    </script>
+</head>
+<body>
+
+</body>
+</html>

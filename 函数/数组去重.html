@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+    </style>
+    <script src=""></script>
+    <script>
+        window.onload = function () {
+            function removeArray(array){
+                var newArray = [];
+                for(var i = 0 ;i<array.length;i++){
+                    if(newArray.indexOf(array[i]) == -1){
+                        newArray.push(array[i]);
+                    }
+                }
+                return newArray;
+            }
+            var result = removeArray([1,2,4,5,13,17,67,6,12,5,1,2]);
+            console.log(result);
+        }
+    </script>
+</head>
+<body>
+
+</body>
+</html>

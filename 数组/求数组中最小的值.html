@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+    </style>
+    <script src=""></script>
+    <script>
+        window.onload = function () {
+        //求数组中的最小值
+            var arr4 = [2,5,-4,5,9,0,-100];
+            var min = arr4[0];
+            for(var i = 0;i<arr4.length;i++){
+                if(min>arr4[i]){
+                    min = arr4[i];
+                }
+            }
+            alert(min);
+        }
+    </script>
+</head>
+<body>
+
+</body>
+</html>

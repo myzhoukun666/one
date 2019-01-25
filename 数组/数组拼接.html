@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+    </style>
+    <script src=""></script>
+    <script>
+        window.onload = function () {
+
+            //案例6:把数组中每个元素用|拼接到一起产生一个字符串并输出
+            var arr = ["张学友", "刘德华", "郭富城", "黎明"];
+            var str = "";
+            for(var i=0;i<arr.length-1;i++){
+                str = str+arr[i]+"|";
+            }
+            console.log(str+arr[arr.length-1]);
+        }
+    </script>
+</head>
+<body>
+
+</body>
+</html>

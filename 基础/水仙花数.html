@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+    </style>
+    <script src=""></script>
+    <script>
+        window.onload = function () {
+            //从100~999一个一个实验，看看谁符合水仙花数特点的。
+            for (var i = 100; i <= 999; i++) {
+                var baiwei = parseInt(i / 100);//999 9
+                var shiwei = parseInt(i % 100 / 10);//999 99/10 9
+                var gewei = parseInt(i % 10);//9
+
+                if(Math.pow(baiwei,3)+Math.pow(shiwei,3)+Math.pow(gewei,3) === i){
+                    console.log(i);
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+
+</body>
+</html>

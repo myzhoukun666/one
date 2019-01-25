@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+<script>
+    //第一步，得到用户输入的年龄
+    var year = parseInt(prompt("请输入自己的年龄"));
+    //第二步，判断用户能否考驾驶证
+    if (year >= 16 && year <= 70) {
+        alert("根据你的年龄，可以考驾驶证");
+    }else{
+        alert("你的年龄还未达到考驾驶证的要求");
+    }
+</script>
+</body>
+</html>

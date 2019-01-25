@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+    </style>
+    <script src=""></script>
+    <script>
+        window.onload = function () {
+            //输出数字，得到其因数个数
+            var acount = 0;
+            var num = parseInt(prompt("请输入一个数"));
+            for (var i = 0; i <= num; i++) {
+                if (num % i == 0) {
+                    console.log(i);
+                    acount++;
+                }
+            }
+            console.log(acount);
+        }
+    </script>
+</head>
+<body>
+
+</body>
+</html>

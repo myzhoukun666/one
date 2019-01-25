@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+    </style>
+    <script src=""></script>
+    <script>
+        window.onload = function () {
+           function getArrayMax(array){
+               var max = array[0];
+               for(var i=0;i<array.length;i++){
+                   if(max<array[i]){
+                       max = array[i];
+                   }
+               }
+               return max;
+           }
+            var result = getArrayMax([10,20,30,40,50]);
+            console.log(result);
+        }
+    </script>
+</head>
+<body>
+
+</body>
+</html>

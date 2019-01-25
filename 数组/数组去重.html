@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+    </style>
+    <script src=""></script>
+    <script>
+        window.onload = function () {
+            var arr  = [1,4,4,4,5,76,4,5,78,9,9];
+            var newArr = [];
+            for(var i = 0 ;i<arr.length;i++){
+                if(newArr.indexOf(arr[i]) ==-1){
+                    newArr.push(arr[i]);
+                }
+            }
+            console.log(newArr);
+        }
+    </script>
+</head>
+<body>
+
+</body>
+</html>

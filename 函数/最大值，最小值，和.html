@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+    </style>
+    <script src=""></script>
+    <script>
+        window.onload = function () {
+             function getArray(array){
+                 var sum =0;
+                 var max =array[0];
+                 var min = array[0];
+                 for(var i = 0 ;i<array.length;i++){
+                     if(max<array[i]){
+                         max = array[i];
+                     }
+                     if(min>array[i]){
+                         min = array[i];
+                     }
+                     sum = sum+array[i];
+                 }
+                 var arr = [max,min,sum];
+                 return arr;
+             }
+            var result = getArray([1,2,3,4,5]);
+            console.log("最大值:"+result[0]);
+            console.log("最小值:"+result[1]);
+            console.log("和:"+result[2]);
+        }
+    </script>
+</head>
+<body>
+
+</body>
+</html>

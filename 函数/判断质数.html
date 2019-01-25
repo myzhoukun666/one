@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+    </style>
+    <script src=""></script>
+    <script>
+        window.onload = function () {
+            function isNum(num) {
+                for (var i = 2; i < num; i++) {
+                    if (num % i == 0) {
+                        return false
+                    }
+                }
+                return true;
+            }
+            var result = isNum(8);
+            if(result){
+                console.log("这个数字是质数");
+            }else{
+                console.log("这个数不是质数");
+            }
+        }
+    </script>
+</head>
+<body>
+
+</body>
+</html>

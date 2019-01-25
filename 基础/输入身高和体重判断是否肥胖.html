@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+<script>
+    //第一步，输入自己的身高和体重
+    var height = parseFloat(prompt("请输入你的身高，单位是米"));
+    var weight = parseFloat(prompt("请输入你的体重，单位是公斤"));
+    //第二步，计算BMI指数
+    var bmi = weight / (Math.pow(height, 2));
+    //第三步，判断，注意跳楼现象
+    if (bmi < 18.5) {
+        alert("过轻");
+    } else if (bmi < 25) {
+        alert("刚好");
+    } else if (bmi < 28) {
+        alert("过重");
+    } else if (bmi < 32) {
+        alert("肥胖")
+    } else {
+        alert("你要减肥了！");
+    }
+</script>
+
+</body>
+</html>

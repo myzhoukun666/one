@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+    </style>
+    <script src=""></script>
+    <script>
+        window.onload = function () {
+
+            //案例3:求数组中所有元素中的最大值
+
+          var arr3 = [1, 3, 2, 5, 10, 100, 50];
+            var max = arr3[0];
+            for(var i=0;i<arr3.length;i++){
+                if(max<arr3[i]){
+                    max = arr3[i];
+                }
+            }
+         alert(max);
+        }
+    </script>
+</head>
+<body>
+
+</body>
+</html>

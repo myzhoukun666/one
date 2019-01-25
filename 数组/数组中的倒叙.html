@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+    </style>
+    <script src=""></script>
+    <script>
+        window.onload = function () {
+
+            //反转数组---把数组中的数据的位置调换
+            var array = [10, 20, 30, 40, 50];
+            for (var i = 0; i < array.length / 2; i++) {
+                var temp = array[i];
+                array[i] = array[array.length - 1 - i];
+                array[array.length - 1 - i] = temp;
+            }
+            console.log(array);
+        }
+    </script>
+</head>
+<body>
+
+</body>
+</html>

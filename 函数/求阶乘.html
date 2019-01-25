@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+    </style>
+    <script src=""></script>
+    <script>
+        window.onload = function () {
+            function jiecheng(num) {
+                var ji = 1;
+                for (var i = 1; i <= num; i++) {
+                    ji = ji * i;
+                }
+                return ji;
+            }
+
+            // console.log(jiecheng(5));
+
+            function jiechenghe(num) {
+                var sum = 0;
+                for (var j = 1; j <= num; j++) {
+                  sum = sum+jiecheng(j);
+                }
+                return sum;
+            }
+            var result = jiechenghe(5);
+            console.log(result);
+        }
+    </script>
+</head>
+<body>
+
+</body>
+</html>

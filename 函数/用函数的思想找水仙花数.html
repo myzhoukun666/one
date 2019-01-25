@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+    </style>
+    <script src=""></script>
+    <script>
+        window.onload = function () {
+
+            for (var i = 100; i <= 999; i++) {
+                if (findNum(i) == true) {
+                    console.log(i);
+                }
+            }
+            function baiwei(num) {
+                return parseInt(num / 100);
+            }
+
+            function shiwei(num) {
+                return parseInt(num % 100 / 10);
+            }
+
+            function gewei(num) {
+                return parseInt(num % 10);
+            }
+
+            function findNum(num) {
+                var a = baiwei(num);
+                var b = shiwei(num);
+                var c = gewei(num);
+                var result = Math.pow(a, 3) + Math.pow(b, 3) + Math.pow(c, 3);
+                if (num == result) {
+                    return true;
+                } else {
+                    return false;
+                }
+            }
+
+
+        }
+    </script>
+</head>
+<body>
+
+</body>
+</html>

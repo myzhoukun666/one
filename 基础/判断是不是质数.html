@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+    </style>
+    <script src=""></script>
+    <script>
+        window.onload = function () {
+//判断是不是质数
+            var num = parseInt(prompt("请输入一个数"));
+           function iszhishu(num){
+               for(var i=2;i<num;i++){
+                   if(num%i==0){
+                       return false+"不是质数";
+                   }
+               }
+               return true+"是质数";
+           }
+           var result = iszhishu(num);
+            console.log(result);
+        };
+    </script>
+</head>
+<body>
+
+</body>
+</html>

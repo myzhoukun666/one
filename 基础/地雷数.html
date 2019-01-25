@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+    </style>
+    <script src=""></script>
+    <script>
+        window.onload = function () {
+            //这个数字不能被7整除   且  这个数字的个位数不能是7
+            var num = parseInt(prompt("请输入一个数字"));
+            for (var i = 1; i <= num; i++) {
+                if (i % 7 != 0 && i % 10 != 7) {
+                    console.log(i);
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+
+</body>
+</html>
